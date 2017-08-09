@@ -2,8 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <button v-on:click="click">add</button>
-    list>
-    <h2 v-for="it in list" v-bind="it"></h2>
+    <!--<h2 v-for="it in list" v-bind="it"></h2>-->
   </div>
 </template>
 
@@ -19,7 +18,7 @@ export default {
   methods: {
     click: function () {
       this.msg += '>'
-      this.list.push('aaa')
+//      this.list.push('aaa')
     }
   },
   created: function () {
