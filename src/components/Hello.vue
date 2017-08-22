@@ -2,28 +2,39 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <button v-on:click="click">add</button>
-    <!--<h2 v-for="it in list" v-bind="it"></h2>-->
+
+    <!--<a v-link="{path:'/h2'}">Go H2</a>-->
+    <router-link to="/h2">Home2</router-link>
+    <list v-bind:data="ary"></list>
   </div>
 </template>
 
 <script>
+import List from '@/components/list'
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'chart',
-      list: []
+      ary: []
     }
   },
   methods: {
-    click: function () {
+    click: function() {
       this.msg += '>'
-//      this.list.push('aaa')
+      this.ary.push('aaa')
+
+//      ary.map(v => {
+//        console.log('click...',v)
+//      })
+
+
     }
   },
   created: function () {
     console.log('created....',this.msg)
-  }
+  },
+  components: { List }
 }
 </script>
 
