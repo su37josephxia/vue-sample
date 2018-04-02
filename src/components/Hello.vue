@@ -1,10 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <button v-on:click="click">add</button>
-
+    <h1>txt:{{$store.state.txt}}</h1>
     <!--<a v-link="{path:'/h2'}">Go H2</a>-->
-    <router-link to="/h2">Home2</router-link>
+    <router-link to="/h2">Page2</router-link>
+    <router-link to="/h3">Page3</router-link>
     <list v-bind:data="ary"></list>
   </div>
 </template>

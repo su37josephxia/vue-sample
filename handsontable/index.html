@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://docs.handsontable.com/pro/1.13.0/bower_components/handsontable-pro/dist/handsontable.full.min.js"></script>
+    <link type="text/css" rel="stylesheet"
+          href="https://docs.handsontable.com/pro/1.13.0/bower_components/handsontable-pro/dist/handsontable.full.min.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var example = document.getElementById('example1')
+            var data = Handsontable.helper.createSpreadsheetData(10, 10)
+
+            data = [
+                    ['1',2,3,4]
+                ,[]
+                ,[],
+
+
+            ]
+
+
+            console.log(data)
+
+            var hot1 = new Handsontable(example, {
+                data: data,
+                width: 584,
+                height: 320,
+                colWidths: 47,
+                rowHeights: 23,
+                rowHeaders: true,
+                colHeaders: true
+            });
+
+        });</script>
+</head>
+<body>
+<div id="example1" class="hot handsontable htRowHeaders htColumnHeaders"
+     style="height: 320px; overflow: hidden; width: 584px;"
+     data-originalstyle="height: 320px; overflow: hidden; width: 584px;"></div>
+</body>
+</html>

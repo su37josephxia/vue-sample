@@ -1,14 +1,15 @@
 <template>
-  <div class="hello2">
-    <h1>Home2....</h1>
+  <div class="hello3">
+    <h1>Home3....</h1>
+    {{$store.state.txt}}
     <router-link to="/">Home</router-link>
-    <input v-model="$store.state.txt"> 
+    
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello2',
+  name: 'hello3',
   data () {
     return {
 
@@ -18,7 +19,7 @@ export default {
 
   },
   created: function () {
-    console.log('hello2....',this.$store.state.txt)
+    console.log('created....',this.msg)
   }
 }
 </script>

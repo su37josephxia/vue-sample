@@ -1,6 +1,6 @@
 <template>
   <div class="list" >
-    <h3 v-for="it in data">{{it}}</h3>
+    <!-- <h3 v-for="it in data">{{it}}</h3> -->
   </div>
 </template>
 
